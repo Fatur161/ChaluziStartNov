@@ -1,0 +1,144 @@
+body,
+html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.policy {
+  color: $color-black;
+  text-decoration: underline !important;
+}
+
+.section-title {
+  @include section-title;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+  background: #fff;
+}
+
+.swiper-container .swiper-pagination-first {
+  bottom: -45px !important;
+}
+
+.swiper-container .swiper-pagination-second {
+  bottom: -35px !important;
+}
+
+.swiper-container .swiper-pagination li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
+  line-height: 12px;
+  text-align: center;
+  background-color: $color-accent-text-light;
+  border: 5px solid gray;
+  border-radius: 50%;
+}
+
+.swiper-container .swiper-pagination li a.swiper-pagination-bullet-active {
+  background-color: red;
+}
+
+.swiper-container .swiper .swiper-slide a,
+.gallery-item a {
+  &:hover {
+    &::before {
+      opacity: 0.45;
+    }
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: $color-black;
+    opacity: 0;
+    transition: opacity ease 0.25s;
+  }
+}
+
+.swiper-container .swiper .swiper-slide a.video,
+.gallery-item a.video {
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: url("../images/Play-btn.svg");
+    opacity: 0.85;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.swiper-container .swiper .swiper-slide a img {
+  height: 305px;
+  object-position: bottom;
+}
+
+.swiper-container .swiper .swiper-slide {
+  background: transparent;
+}
+
+.modal-header {
+  background-color: $color-accent-bg;
+}
+
+.modal-body button[type="submit"] {
+  background-color: $color-accent !important;
+}
+
+.breadcrumb-item {
+  a {
+    color: $color-black !important;
+  }
+}
+
+.product-title {
+  font-size: clamp(1.625rem, 1.298rem + 1.63vw, 2.625rem);
+  color: $color-accent-text;
+  font-weight: bold;
+}
+
+.card .card-img-top {
+  height: 235px;
+  object-fit: cover;
+}
+
+// Media requests
+@media (width <= 758px) {
+  .swiper-container .swiper .swiper-slide a img {
+    height: 220px;
+  }
+}

@@ -1,0 +1,36 @@
+.products {
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  &-title {
+    margin-bottom: $margin-bottom-section;
+  }
+  .card {
+    box-shadow: 7px 9px 6px 0 rgba(0, 0, 0, 0.25);
+    &-link {
+      @include more-link;
+    }
+    &-btn {
+      @include green-btn;
+      font-size: 16px;
+    }
+  }
+  .card .card-title {
+    font-weight: bold;
+    span {
+      color: $color-accent-second;
+    }
+  }
+  &-wrapper {
+    background-color: $color-accent-bg;
+  }
+}
+
+// Media request
+@media (width <=400px) {
+  .card .card-btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

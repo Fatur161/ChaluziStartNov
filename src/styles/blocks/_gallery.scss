@@ -1,0 +1,26 @@
+.gallery {
+  &__title {
+    margin-bottom: $margin-bottom-section;
+  }
+  a {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+  a img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+
+// Media request
+@media (width <= 425px) {
+  .gallery {
+    a img {
+      height: 250px;
+    }
+  }
+}

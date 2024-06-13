@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include("./blocks/head.html")
+  <body>
+    <div class="wrapper">
+      @@include("./blocks/header.html")
+      <main>
+        <section class="error-section text-center">
+          <div class="container">
+            <h2
+              class="d-flex align-items-md-center gap-md-5 flex-md-row flex-column text-start"
+            >
+              404
+              <span> Такой страницы к сожалению не существует( </span>
+            </h2>
+            <a class="d-inline-block back-to-homepage mt-5" href=""
+              >Вернуться на главную</a
+            >
+          </div>
+        </section>
+      </main>
+      @@include("./blocks/footer.html")
+    </div>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

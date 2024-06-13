@@ -1,0 +1,74 @@
+<div id="mainModal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ваша заявка</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form id="mainForm" class="needs-validation" novalidate>
+          <div class="mb-1">
+            <label for="name" class="col-form-label">ФИО:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="Ваше ФИО"
+              required
+            />
+          </div>
+          <div class="mb-1">
+            <label for="tel" class="col-form-label">Телефон:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="tel"
+              id="tel"
+              placeholder="+7"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label"
+              >Ваш комментарий</label
+            >
+            <textarea
+              placeholder="Тут ваше сообщение"
+              class="form-control"
+              name="message-text"
+              id="message-text"
+              style="resize: none"
+              rows="4"
+              maxlength="255"
+            ></textarea>
+          </div>
+          <div class="d-flex justify-content-end gap-2">
+            <button
+              type="button"
+              class="btn btn-secondary text-black"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+            <button class="btn btn-success text-black" type="submit">
+              Получить свою цену
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-start">
+        <p style="font-size: 14px">
+          Нажимая "Получить свою цену", я даю своё согласие на обработку моих
+          персональных данных, в соответствии с №152-ФЗ «О персональных данных»
+          от 27.07.2006 г.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

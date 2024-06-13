@@ -1,0 +1,75 @@
+.hero-section {
+  height: 85lvh;
+  padding-top: 100px;
+  margin-top: 55px;
+  color: $color-white;
+  background-image: url("../images/hero-section/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  h1 {
+    margin-bottom: 20px;
+    font-size: clamp(2rem, 1.682rem + 1.59vw, 2.875rem);
+    font-weight: bold;
+  }
+  button {
+    @include green-btn;
+    margin-top: 55px;
+  }
+  &__description {
+    max-width: 650px;
+    font-size: clamp(1.375rem, 1.239rem + 0.68vw, 1.75rem);
+    text-wrap: balance;
+  }
+  h1,
+  .hero-section__description {
+    span {
+      font-weight: bold;
+      color: $color-accent-text-light;
+    }
+  }
+  &__inner {
+    max-width: 730px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    background: rgba(155, 172, 179, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+    // filter: blur(50px);filter
+  }
+}
+
+// Media requests
+
+@media (width <= 758px) {
+  .hero-section {
+    height: 75dvh;
+    padding-top: 75px;
+  }
+}
+
+@media (height <= 881px) {
+  .hero-section {
+    height: 90dvh;
+  }
+}
+
+@media (width <= 335px) {
+  .hero-section {
+    h1 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (height <= 615px) {
+  .hero-section {
+    .hero-section__description {
+      font-size: 18px;
+    }
+  }
+  button {
+    margin-top: 20px !important;
+  }
+}

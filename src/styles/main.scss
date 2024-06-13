@@ -1,0 +1,21 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+@import "reset.scss";
+@import "vars.scss";
+@import "mixins.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "general.scss";
+//blocks
+@import "./blocks/header.scss";
+@import "./blocks/hero-section.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/about-us.scss";
+@import "./blocks/products.scss";
+@import "./blocks/portfolio.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+
+//pages
+@import "./blocks/error.scss";
+@import "./blocks/category.scss";
+@import "./blocks/gallery.scss";

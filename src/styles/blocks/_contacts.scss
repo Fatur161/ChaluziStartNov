@@ -1,0 +1,20 @@
+.contacts {
+  &__title {
+    margin-bottom: $margin-bottom-section;
+  }
+  &__info {
+    max-width: 500px;
+    font-size: clamp(1.125rem, 1.084rem + 0.2vw, 1.25rem);
+    font-weight: 600;
+    span {
+      flex-shrink: 4;
+    }
+    a {
+      color: $color-black;
+      &:hover {
+        color: $color-accent--hover;
+      }
+      transition: color ease 0.2s;
+    }
+  }
+}

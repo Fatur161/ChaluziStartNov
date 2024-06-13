@@ -1,0 +1,7 @@
+.portfolio {
+  &__subtitle {
+    max-width: 630px;
+    margin-bottom: $margin-bottom-section;
+    text-wrap: balance;
+  }
+}

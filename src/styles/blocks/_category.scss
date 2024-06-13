@@ -1,0 +1,45 @@
+.category-main {
+  padding-top: 100px;
+  .img-wrapper {
+    max-width: 580px;
+    max-height: 400px;
+    img {
+      width: 100%;
+    }
+  }
+  .tovar-wrapper {
+    background-color: $color-accent-bg;
+  }
+  p {
+    font-size: clamp(1.25rem, 1.171rem + 0.4vw, 1.5rem);
+  }
+  .price {
+    font-size: clamp(1.625rem, 1.308rem + 1.58vw, 2.625rem);
+    font-weight: bold;
+    span {
+      color: $color-accent-text;
+    }
+  }
+  .tovar__description {
+    max-width: 600px;
+  }
+  button {
+    @include green-btn;
+  }
+}
+
+.products-wrapper--category {
+  background: transparent;
+  .card .card-img-top {
+    height: 285px;
+  }
+}
+
+// Media requests
+@media (width <= 450px) {
+  .products-wrapper--category {
+    .card .card-img-top {
+      height: 215px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@mixin green-btn {
+  padding: 13px 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: $color-white;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $color-accent !important;
+  border-radius: 25px;
+  transition: background-color ease 0.2s !important;
+  &:hover {
+    background-color: $color-accent--hover !important;
+  }
+  // Mixin media requests
+  @media (width <= 758px) {
+    font-size: 18px;
+  }
+}
+
+@mixin section-title {
+  position: relative;
+  display: inline-block;
+  font-size: $fz-section-title;
+  color: $color-accent;
+  &::after {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 100%;
+    height: 5px;
+    content: "";
+    background-color: $color-accent;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin green-border {
+  position: relative;
+  display: block;
+  &::after {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 100%;
+    height: 5px;
+    content: "";
+    background-color: $color-accent;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin more-link {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-black;
+  &:hover {
+    &::after {
+      opacity: 0;
+    }
+  }
+  &::after {
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background-color: $color-black;
+    transition: opacity ease 0.2s;
+    transform: translateX(-50%);
+  }
+}

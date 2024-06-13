@@ -1,0 +1,38 @@
+.reviews {
+  &-wrapper {
+    background-color: $color-accent-bg;
+  }
+  &__title {
+    margin-bottom: $margin-bottom-section;
+  }
+  .card {
+    box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.25);
+  }
+  .card,
+  .card-body {
+    border: none;
+    border-radius: 0;
+  }
+  .card .card-text {
+    height: 100px;
+  }
+  .card .card-profile {
+    &__name {
+      font-weight: bold;
+    }
+    img {
+      width: 82px;
+      height: 72px;
+      object-fit: cover;
+      // width: 100%;
+      // height: 100%;
+      border-radius: 50%;
+    }
+  }
+  .card .card-title {
+    @include green-border;
+  }
+  .swiper-container .swiper-slide {
+    padding: 15px;
+  }
+}

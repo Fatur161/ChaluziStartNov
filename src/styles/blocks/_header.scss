@@ -1,0 +1,108 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $color-accent-bg !important;
+  transition: top ease 0.5s;
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 18px !important;
+    color: $color-black;
+    white-space: nowrap !important;
+    &:hover {
+      color: $color-accent-text !important;
+    }
+  }
+  a.header__contacts,
+  span.header__contacts {
+    padding-left: 6px;
+    font-weight: bold !important;
+    color: $color-accent-text !important;
+    white-space: nowrap;
+  }
+  .navbar-toggler {
+    border: none;
+    .animated-icon2 {
+      position: relative;
+      width: 30px;
+      height: 20px;
+      margin: 0px;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+      transform: rotate(0deg);
+    }
+    .animated-icon2 span {
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: $color-black;
+      border-radius: 9px;
+      opacity: 1;
+      transition: 0.25s ease-in-out;
+      transform: rotate(0deg);
+    }
+    .animated-icon2 span:nth-child(1) {
+      top: 0px;
+    }
+
+    .animated-icon2 span:nth-child(2),
+    .animated-icon2 span:nth-child(3) {
+      top: 10px;
+    }
+
+    .animated-icon2 span:nth-child(4) {
+      top: 20px;
+    }
+
+    .animated-icon2.open span:nth-child(1) {
+      top: 11px;
+      left: 50%;
+      width: 0%;
+    }
+
+    .animated-icon2.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .animated-icon2.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    .animated-icon2.open span:nth-child(4) {
+      top: 11px;
+      left: 50%;
+      width: 0%;
+    }
+  }
+}
+
+.fixed-header header {
+  top: -550px;
+}
+.fixed-header .show {
+  top: 0;
+}
+
+// Media requests
+
+@media (width < 992px) {
+  header {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      font-size: 16px !important;
+      &:hover {
+        color: $color-black !important;
+      }
+    }
+    .header__contacts-wrapper {
+      gap: 10px;
+    }
+  }
+}
