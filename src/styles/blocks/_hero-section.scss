@@ -1,5 +1,5 @@
 .hero-section {
-  height: 85vh;
+  height: 85svh;
   padding-top: 100px;
   margin-top: 55px;
   color: $color-white;
@@ -44,14 +44,14 @@
 
 @media (width <= 758px) {
   .hero-section {
-    height: 75dvh;
+    height: 75svh;
     padding-top: 75px;
   }
 }
 
 @media (height <= 881px) {
   .hero-section {
-    height: 90dvh;
+    height: 90svh;
   }
 }
 
