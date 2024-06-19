@@ -5,7 +5,7 @@ document.querySelector("#mainForm").addEventListener("submit", function (e) {
   let form = this;
   if (form.checkValidity()) {
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "./php/send-to-server.php"); // Указываем метод и путь к обработчику
+    xhr.open("POST", WPJS.siteUrl + "/assets/php/send_to_server.php"); // Указываем метод и путь к обработчику
     xhr.onreadystatechange = function () {
       if (xhr.readyState == 4 && xhr.status == 200) {
         alert("Ваша заявка отправлена, в скором времени мы с вами свяжемся");

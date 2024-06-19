@@ -126,7 +126,7 @@
 </div>
 
     <div class="wrapper">
-      <header class="header z-2">
+      <header class="header">
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#"
@@ -261,7 +261,11 @@
 </header>
 
       <main>
-        <section id="heroSection" class="hero-section">
+        <section
+  id="heroSection"
+  class="hero-section"
+  style="background-image: url(./images/hero-section/hero-background.jpg)"
+>
   <div class="container">
     <div class="hero-section__inner">
       <h1>Жалюзи в <span>Новороссийске</span></h1>
@@ -427,6 +431,7 @@
               fill="#B1C900"
             />
           </svg>
+          <!-- Тут в wordpress у img style=width:auto -->
         </a>
         <p>
           Являясь всего лишь частью общей картины, действия представителей
@@ -604,7 +609,7 @@
           </div>
           <div class="swiper-slide">
             <a
-              class="w-100 video"
+              class="w-100 video d-inline-block"
               href="https://www.youtube.com/watch?v=ncZKFDZD03s"
               data-fancybox="gallery"
               data-caption="Caption #3"
@@ -669,12 +674,12 @@
                       />
                       <div class="card-profile__info">
                         <span class="card-profile__name">Даниил Семенов</span>
-                        <div class="card-profile__rating"></div>
-                        <i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
-                        <i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
-                        <i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
-                        <i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
-                        <i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
+                        <div class="card-profile__rating"><i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
+                          <i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
+                          <i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
+                          <i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
+                          <i class='fa-solid fa-star' aria-hidden="true" style='color: #f3da35'></i>
+                        </div>
                         </div>
                       </div>
                       <h5 class="card-title">Шторы</h5>
@@ -698,7 +703,7 @@
   <div class="container">
     <h2 class="contacts__title section-title">Контакты📞</h2>
     <div class="d-flex justify-content-lg-between flex-column flex-lg-row">
-      <div class="contacts__info text-start pt-md-5">
+      <div class="contacts__info text-start pt-md-5 pe-lg-5">
         <ul class="d-flex flex-column gap-3 ps-0">
           <li class="d-flex align-items-center gap-2">
             <svg
@@ -908,6 +913,7 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/scroll.bundle.js"></script>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

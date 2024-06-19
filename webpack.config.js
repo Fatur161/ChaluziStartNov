@@ -7,7 +7,7 @@ const config = {
   plugins: [new BundleAnalyzerPlugin()],
   entry: {
     index: "./src/js/app.js",
-    // contacts: './src/js/contacts.js',
+    scroll: "./src/js/smooth-scroll.js",
     // about: './src/js/about.js',
   },
   output: {

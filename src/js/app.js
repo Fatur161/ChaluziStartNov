@@ -9,9 +9,6 @@ import "./modules/moving-header.js";
 //Инициализия tippy
 import "./modules/tippy-ini.js";
 
-//Плавный скролл до anchor
-import "./modules/smooth-anchors.js";
-
 //Инициализация маски ввода
 import "./modules/mask-ini.js";
 
